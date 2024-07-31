@@ -1,0 +1,11 @@
+document.getElementById('notasForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const nombreAlumno = document.getElementById('nombreAlumno').value;
+    const nota = document.getElementById('nota').value;
+
+    const resultDiv = document.getElementById('result');
+    resultDiv.textContent = `Nota guardada: ${nombreAlumno} - ${nota}`;
+
+    // Aquí puedes agregar el código para enviar los datos a un servidor o guardarlos localmente
+});

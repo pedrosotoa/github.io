@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet de Profesores</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Intranet de Profesores</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Ingresar Notas</h2>
+            <form id="notasForm">
+                <label for="nombreAlumno">Nombre del Alumno:</label>
+                <input type="text" id="nombreAlumno" name="nombreAlumno" required>
+                <label for="nota">Nota:</label>
+                <input type="number" id="nota" name="nota" required>
+                <button type="submit">Guardar Nota</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Escuela</p>
+    </footer>
+    <script src="js/intranet.js"></script>
+</body>
+</html>
