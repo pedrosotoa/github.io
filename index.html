@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Escuela</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -12,27 +14,39 @@
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#documentos">Documentos</a></li>
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
 <main>
     <section id="inicio">
         <h2>Inicio</h2>
         <p>Bienvenido a nuestra escuela, un lugar donde los niños crecen y aprenden en un ambiente seguro y estimulante.</p>
     </section>
 
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <p>Ofrecemos una amplia gama de servicios educativos para apoyar el desarrollo integral de nuestros alumnos.</p>
+    <section id="documentos">
+        <h2>Documentos</h2>
+        <p>A continuacion se ofrecen para su visualisacion y descarga, los documentos normativos del colegio</p>
     </section>
 
     <section id="galeria">
         <h2>Galería de Fotos</h2>
-        <img src="images/escuela1.jpg" alt="Foto de la escuela">
-        <img src="images/escuela2.jpg" alt="Foto de la escuela">
+        <!-- Swiper Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg" alt="Foto 1 de la escuela"></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt="Foto 1 de la escuela"></div>
+                <div class="swiper-slide"><img src="images/3.jpg" alt="Foto 1 de la escuela"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
     <section id="contacto">
@@ -43,13 +57,33 @@
         data-show-facepile="false"></div>
     </section>
 </main>
-    <footer>
-        <p>&copy; 2024 Mi Escuela</p>
-    </footer>
 
-    <!-- Facebook SDK -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0" nonce="your-nonce"></script>
+<footer>
+    <p>&copy; 2024 Mi Escuela</p>
+</footer>
+
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0" nonce="your-nonce"></script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
 </body>
 </html>
-
