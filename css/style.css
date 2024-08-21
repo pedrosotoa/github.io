@@ -89,3 +89,16 @@ footer {
     padding: 1em 0;
     width: 100%;
 }
+/* Estilo para el contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantén la proporción del logo */
+}
