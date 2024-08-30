@@ -165,13 +165,31 @@ footer {
 .footer-social .social-icon {
     display: inline-block;
     margin-right: 15px;
-    color: #fff;
-    font-size: 1.5em;
     transition: opacity 0.3s ease;
 }
 
 .footer-social .social-icon:hover {
-    opacity: 0.7;
+    opacity: 0.8;
+}
+
+.facebook-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.fb-logo {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
 }
 
 .footer-bottom {
