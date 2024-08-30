@@ -23,36 +23,65 @@ main {
     text-align: center;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #2c3e50;
 }
 header {
-    background: #D32F2F;
+    background-color: #D32F2F;
     color: white;
-    padding: 1em 0;
-    text-align: center;
+    padding: 1em 2em; /* Aumentamos el padding horizontal */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px; /* Ajusta según el tamaño de tu logo */
+    height: auto;
+    margin-right: 15px;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px; /* Espacio entre elementos del menú */
+}
+nav ul li:first-child {
+    margin-left: 0;
 }
 nav ul li a {
-    color: white;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+nav ul li a:hover {
+    opacity: 0.8;
 }
 section {
     padding: 2em 0;
     text-align: center;
+    margin-bottom: 2rem;
 }
 section h2 {
     margin-bottom: 1em;
-    color: #424242;
+    color: #2c3e50; /* Cambiamos el color para mejor contraste */
+    font-size: 2.2rem; /* Aumentamos ligeramente el tamaño */
+    margin-bottom: 1rem;
 }
 img {
     max-width: 100%;
@@ -83,22 +112,85 @@ form button:hover {
     background: #45a049;
 }
 footer {
-    background: #D32F2F;
-    color: #424242;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
-}
-/* Estilo para el contenedor del logo */
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Espacio entre el logo y el título */
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0 20px;
 }
 
-/* Estilo para el logo */
-.logo {
-    width: 100px; /* Ajusta el tamaño del logo */
-    height: auto; /* Mantén la proporción del logo */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo, .footer-contact, .footer-links, .footer-social {
+    flex: 1;
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-content h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-social .social-icon {
+    display: inline-block;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo, .footer-contact, .footer-links, .footer-social {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
