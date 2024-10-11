@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuela Eloisa Gonzalez</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -17,104 +15,84 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#documentos">Documentos</a></li>
-                <li><a href="#galeria">Galería</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-<main>
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>Bienvenido a nuestra escuela, un lugar donde los niños crecen y aprenden en un ambiente seguro y estimulante.</p>
-    </section>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestra escuela, un lugar donde los niños crecen y aprenden en un ambiente seguro y estimulante.</p>
+        </section>
 
-    <section id="documentos">
-        <h2>Documentos</h2>
-        <p>A continuacion se ofrecen para su visualisacion y descarga, los documentos normativos del colegio</p>
-    </section>
-
-    <section id="galeria">
-        <h2>Galería de Fotos</h2>
-        <!-- Swiper Slider -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/1.jpg" alt="Foto 1 de la escuela"></div>
-                <div class="swiper-slide"><img src="images/2.jpg" alt="Foto 1 de la escuela"></div>
-                <div class="swiper-slide"><img src="images/3.jpg" alt="Foto 1 de la escuela"></div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <div class="fb-page" 
-        data-href="https://www.facebook.com/escuelaeloisatirua"
-        data-width="380" 
-        data-hide-cover="false"
-        data-show-facepile="false"></div>
-    </section>
-</main>
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-logo">
-            <img src="images/logo.jpg" alt="Logo de la Escuela" class="logo">
-        </div>
-        <div class="footer-contact">
-            <h3>Contáctanos</h3>
-            <p>Dirección: Los philos S/N, Tirua</p>
-            <p>Teléfono: (+56) 999884956</p>
-            <p>Email: eegtirua@gmail.com</p>
-        </div>
-        <div class="footer-links">
-            <h3>Enlaces de Interés</h3>
+        <section id="documentos">
+            <h2>Documentos</h2>
+            <p>A continuación se ofrecen para su visualización y descarga, los documentos normativos del colegio:</p>
             <ul>
-                <li><a href="#">Calendario Escolar</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Recursos para Estudiantes</a></li>
-                <li><a href="#">Portal de Padres</a></li>
+                <li>
+                    <a href="docs/PEI, 2023-2024-2025.pdf" target="_blank" rel="noopener noreferrer">
+                        Proyecto Educativo Institucional
+                    </a>
+                </li>
+                <li>    
+                    <a href="docs/RI Eloisa Gonzalez 2024.pdf" target="_blank" rel="noopener noreferrer"> Reglamento Interno
+                    </a>
+                </li>
+                <li>
+                    <a href="docs/PLAN INTEGRAL DE SEGURIDAD ESCOLAR.pdf" target="_blank" rel="noopener noreferrer"> Plan Integral de Seguridad Escolar
+                    </a>
+                </li>
+                <li>
+                    <a href="docs/Reglamento de evaluación.pdf" target="_blank" rel="noopener noreferrer"> Reglamento de Evaluación
+                    </a>
+                </li>
             </ul>
-        </div>
-        <div class="footer-social">
-            <h3>Síguenos</h3>
-            <a href="https://www.facebook.com/escuelaeloisatirua" target="_blank" class="social-icon facebook-icon">
-                <span class="fb-logo">f</span>
-            </a>
-            <!-- Puedes mantener o eliminar los otros iconos de redes sociales según sea necesario -->
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Por Pedro Soto Antileo. Todos los derechos reservados.</p>
-    </div>
-</footer>
+        </section>
 
-<!-- Facebook SDK -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0" nonce="your-nonce"></script>
+        <section id="contacto">
+            <div class="fb-page" 
+            data-href="https://www.facebook.com/escuelaeloisatirua"
+            data-width="380" 
+            data-hide-cover="false"
+            data-show-facepile="false"></div>
+        </section>
+    </main>
 
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-    });
-</script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Logo de la Escuela" class="logo">
+            </div>
+            <div class="footer-contact">
+                <h3>Contáctanos</h3>
+                <p>Dirección: Los philos S/N, Tirua</p>
+                <p>Teléfono: (+56) 9 9988 4956</p>
+                <p>Email: eegtirua@gmail.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces de Interés</h3>
+                <ul>
+                    <li><a href="#">Calendario Escolar</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Recursos para Estudiantes</a></li>
+                    <li><a href="#">Portal de Padres</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/escuelaeloisatirua" target="_blank" class="social-icon facebook-icon">
+                    <span class="fb-logo">f</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Por Pedro Soto Antileo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0" nonce="your-nonce"></script>
 </body>
 </html>
